@@ -1,1 +1,3 @@
-# platki
+# Płatki
+
+Czyli ślub.
