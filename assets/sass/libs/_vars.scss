@@ -21,7 +21,7 @@
 
 // Font.
 	$font: (
-		family:						('Source Sans Pro', sans-serif),
+		family:						('Jim Nightshade', cursive),
 		family-fixed:				('Courier New', monospace),
 		weight:						300,
 		weight-bold:				600,
@@ -31,13 +31,13 @@
 
 // Palette.
 	$palette: (
-		bg:							#1b1f22,
-		bg-alt:						#000000,
-		bg-overlay:					rgba(19,21,25,0.5),
-		fg:							#ffffff,
-		fg-bold:					#ffffff,
+		bg:							#1b1f22, // dialogbox bg
+		bg-alt:						rgba(0,0,0,0), //#ec6b00, // start overlay color
+		bg-overlay:					rgba(0,0,0,0.3), //end overlay color
+		fg:							#ffffff, // text fg
+		fg-bold:					#ffffff, // text header
 		fg-light:					rgba(255,255,255,0.5),
-		border:						#ffffff,
+		border:						#ffffff, // borders
 		border-bg:					rgba(255,255,255,0.075),
 		border-bg-alt:				rgba(255,255,255,0.175)
 	);
