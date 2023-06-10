@@ -1,53 +1,134 @@
-@import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap");
+@font-face {
+  font-family: "Tengwar";
+  src: url("../../assets/webfonts/TengwarAnnatar.ttf"); }
+
+@font-face {
+  font-family: "Tengwar";
+  src: url("../../assets/webfonts/TengwarAnnatarItalic.ttf");
+  font-style: italic; }
+
+@font-face {
+  font-family: "Tengwar";
+  src: url("../../assets/webfonts/TengwarAnnatarBold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: "Tengwar";
+  src: url("../../assets/webfonts/TengwarAnnatarBoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic; }
+
 body, html {
   height: 100%;
   margin: 0;
   font-family: "Jim Nightshade", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
+  line-height: 1.5;
   color: #777; }
 
-.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(18px + 6 * ((100vw - 320px) / 680)); } }
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 23px; } }
+
+* {
+  font-size: 1.2rem; }
+
+h1 {
+  font-size: 2.2rem; }
+
+h2 {
+  font-size: 1.6rem; }
+
+h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+  a:hover {
+    color: #777; }
+
+.left {
+  float: left;
+  margin: 0; }
+
+.right {
+  float: right; }
+
+.clear {
+  clear: both;
+  text-align: center; }
+
+.bgimg {
   position: relative;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
 
-.bgimg-1 {
-  background-image: url("../../images/bgz.jpg");
+.bgimg-slub {
+  background-image: url("../../images/bgz-s.jpg");
   min-height: 100%; }
 
-.bgimg-2 {
-  background-image: url("../../images/wesele.jpg");
-  min-height: 400px; }
+.bgimg-wesele {
+  background-image: url("../../images/wesele-s.jpg");
+  min-height: 100%; }
 
-.bgimg-3 {
-  background-image: url("../../images/parking.jpg");
-  min-height: 400px; }
+.bgimg-parking {
+  background-image: url("../../images/parking-s.jpg");
+  min-height: 100%; }
 
-.bgimg-4 {
-  background-image: url("../../images/zdjecia.jpg");
-  min-height: 400px; }
+.bgimg-zdjecia {
+  background-image: url("../../images/zdjecia-s.jpg");
+  min-height: 100%; }
 
-.bgimg-5 {
-  background-image: url("../../images/kontakt.jpg");
-  min-height: 400px; }
+.bgimg-kontakt {
+  background-image: url("../../images/kontakt-s.jpg");
+  min-height: 100%; }
+
+@media (min-width: 601px) {
+  .bgimg-slub {
+    background-image: url("../../images/bgz.jpg"); }
+  .bgimg-wesele {
+    background-image: url("../../images/wesele.jpg"); }
+  .bgimg-parking {
+    background-image: url("../../images/parking.jpg"); }
+  .bgimg-zdjecia {
+    background-image: url("../../images/zdjecia.jpg"); }
+  .bgimg-kontakt {
+    background-image: url("../../images/kontakt.jpg"); } }
 
 .caption {
   position: absolute;
   left: 0;
   top: 50%;
+  transform: translate(0, -50%);
   width: 100%;
   text-align: center;
-  color: #000; }
+  color: #fff;
+  mix-blend-mode: overlay;
+  font-family: "Tengwar";
+  font-style: italic;
+  font-weight: bold; }
 
 .caption span.border {
   background-color: #111;
   color: #fff;
   padding: 18px;
-  font-size: 25px;
   letter-spacing: 10px; }
+
+.content {
+  max-width: 30rem;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-align: left; }
 
 /* Turn off parallax scrolling for tablets and phones */
 
