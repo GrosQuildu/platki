@@ -32,8 +32,8 @@
 // Palette.
 	$palette: (
 		bg:							#1b1f22, // dialogbox bg
-		bg-alt:						rgba(0,0,0,0), //#ec6b00, // start overlay color
-		bg-overlay:					rgba(0,0,0,0.3), //end overlay color
+		bg-alt:						#000000, // start overlay color
+		bg-overlay:					rgba(0,0,0,0), //end overlay color
 		fg:							#ffffff, // text fg
 		fg-bold:					#ffffff, // text header
 		fg-light:					rgba(255,255,255,0.5),
