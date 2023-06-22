@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kings&display=swap");
 @font-face {
   font-family: "Tengwar";
   src: url("../../assets/webfonts/TengwarAnnatar.ttf"); }
@@ -22,21 +22,18 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: "Jim Nightshade", sans-serif;
-  font-size: 18px;
+  font-family: "Kings", cursive;
+  font-size: 22px;
   line-height: 1.5;
   color: #777; }
 
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 680)); } }
+@media (min-width: 320px) {
+  body, html {
+    font-size: calc(22px + 3 * ((100vw - 320px) / 680)); } }
 
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 23px; } }
-
-* {
-  font-size: 1.2rem; }
+@media (min-width: 1000px) {
+  body, html {
+    font-size: 25px; } }
 
 h1 {
   font-size: 2.2rem; }
@@ -48,6 +45,9 @@ h3 {
   font-size: 1.8rem;
   margin: 0;
   font-weight: normal; }
+
+.smaller {
+  font-size: 0.8rem; }
 
 a {
   text-decoration: none;
@@ -74,36 +74,72 @@ a {
   background-size: cover; }
 
 .bgimg-slub {
-  background-image: url("../../images/bgz-s.jpg");
+  background-image: url("../../images/tytulowa-480.jpg");
   min-height: 100%; }
 
 .bgimg-wesele {
-  background-image: url("../../images/wesele-s.jpg");
+  background-image: url("../../images/wesele-480.jpg");
   min-height: 100%; }
 
 .bgimg-parking {
-  background-image: url("../../images/parking-s.jpg");
+  background-image: url("../../images/parking-480.jpg");
   min-height: 100%; }
 
-.bgimg-zdjecia {
-  background-image: url("../../images/zdjecia-s.jpg");
+.bgimg-fotografie {
+  background-image: url("../../images/fotografie-480.jpg");
   min-height: 100%; }
 
 .bgimg-kontakt {
-  background-image: url("../../images/kontakt-s.jpg");
+  background-image: url("../../images/kontakt-480.jpg");
   min-height: 100%; }
 
-@media (min-width: 601px) {
+@media (min-width: 481px) {
   .bgimg-slub {
-    background-image: url("../../images/bgz.jpg"); }
+    background-image: url("../../images/tytulowa-768.jpg"); }
   .bgimg-wesele {
-    background-image: url("../../images/wesele.jpg"); }
+    background-image: url("../../images/wesele-768.jpg"); }
   .bgimg-parking {
-    background-image: url("../../images/parking.jpg"); }
-  .bgimg-zdjecia {
-    background-image: url("../../images/zdjecia.jpg"); }
+    background-image: url("../../images/parking-768.jpg"); }
+  .bgimg-fotografie {
+    background-image: url("../../images/fotografie-768.jpg"); }
   .bgimg-kontakt {
-    background-image: url("../../images/kontakt.jpg"); } }
+    background-image: url("../../images/kontakt-768.jpg"); } }
+
+@media (min-width: 769px) {
+  .bgimg-slub {
+    background-image: url("../../images/tytulowa-1024.jpg"); }
+  .bgimg-wesele {
+    background-image: url("../../images/wesele-1024.jpg"); }
+  .bgimg-parking {
+    background-image: url("../../images/parking-1024.jpg"); }
+  .bgimg-fotografie {
+    background-image: url("../../images/fotografie-1024.jpg"); }
+  .bgimg-kontakt {
+    background-image: url("../../images/kontakt-1024.jpg"); } }
+
+@media (min-width: 1025px) {
+  .bgimg-slub {
+    background-image: url("../../images/tytulowa-1200.jpg"); }
+  .bgimg-wesele {
+    background-image: url("../../images/wesele-1200.jpg"); }
+  .bgimg-parking {
+    background-image: url("../../images/parking-1200.jpg"); }
+  .bgimg-fotografie {
+    background-image: url("../../images/fotografie-1024.jpg"); }
+  .bgimg-kontakt {
+    background-image: url("../../images/kontakt-1200.jpg"); } }
+
+@media (min-width: 1201px) {
+  .bgimg-slub {
+    background-image: url("../../images/tytulowa-1568.jpg"); }
+  .bgimg-wesele {
+    background-image: url("../../images/wesele-1568.jpg"); }
+  .bgimg-parking {
+    background-image: url("../../images/parking-1568.jpg"); }
+  .bgimg-fotografie {
+    background-image: url("../../images/fotografie-1024.jpg"); }
+  .bgimg-kontakt {
+    background-image: url("../../images/kontakt-1568.jpg"); } }
 
 .caption {
   position: absolute;

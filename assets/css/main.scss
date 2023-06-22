@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kings&display=swap');
 
 @font-face {
     font-family: "Tengwar";
@@ -24,26 +24,23 @@
 body, html {
   height: 100%;
   margin: 0;
-  font-family: "Jim Nightshade", sans-serif;
-  // font-size: calc(60% + 2vmin);
-  font-size: 18px;
+  font-family: "Kings", cursive;
+  font-size: 22px;
   line-height: 1.5;
   color: #777;
 }
-@media screen and (min-width: 320px) {
-  html {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 680));
+@media (min-width: 320px) {
+  body, html {
+    // a =(320, 22) b=(1000, 25); 
+    font-size: calc(22px + 3 * ((100vw - 320px) / 680));
   }
 }
-@media screen and (min-width: 1000px) {
-  html {
-    font-size: 23px;
+@media (min-width: 1000px) {
+  body, html {
+    font-size: 25px;
   }
 }
 
-* {
-  font-size: 1.2rem;
-}
 h1 {
   font-size: 2.2rem;
 }
@@ -55,6 +52,10 @@ h3 {
   margin: 0;
   font-weight: normal;
 }
+.smaller {
+  font-size: 0.8rem;
+}
+
 p {
   // margin: 0;
 }
@@ -87,44 +88,56 @@ a {
 
 }
 .bgimg-slub {
-  background-image: url("../../images/bgz-s.jpg");
+  background-image: url("../../images/tytulowa-480.jpg");
   min-height: 100%;
 }
 .bgimg-wesele {
-  background-image: url("../../images/wesele-s.jpg");
+  background-image: url("../../images/wesele-480.jpg");
   min-height: 100%;
 }
 
 .bgimg-parking {
-  background-image: url("../../images/parking-s.jpg");
+  background-image: url("../../images/parking-480.jpg");
   min-height: 100%;
 }
 
-.bgimg-zdjecia {
-  background-image: url("../../images/zdjecia-s.jpg");
+.bgimg-fotografie {
+  background-image: url("../../images/fotografie-480.jpg");
   min-height: 100%;
 }
 
 .bgimg-kontakt {
-  background-image: url("../../images/kontakt-s.jpg");
+  background-image: url("../../images/kontakt-480.jpg");
   min-height: 100%;
 }
-@media (min-width: 601px) {
-  .bgimg-slub {
-    background-image: url("../../images/bgz.jpg");
-  }
-  .bgimg-wesele {
-    background-image: url("../../images/wesele.jpg");
-  }
-  .bgimg-parking {
-    background-image: url("../../images/parking.jpg");
-  }
-  .bgimg-zdjecia {
-    background-image: url("../../images/zdjecia.jpg");
-  }
-  .bgimg-kontakt {
-    background-image: url("../../images/kontakt.jpg");
-  }
+// for size in {480,768,1024,1200,1568}; do export size=$size; find . -maxdepth 1 -iname "*.jpg" -exec sh -c 'convert -resize "$size" -quality 80% "$1" "../${1%.*}-${size}.jpg"' sh {} \; ;done
+@media (min-width: 481px) {
+  .bgimg-slub {background-image: url("../../images/tytulowa-768.jpg");}
+  .bgimg-wesele {background-image: url("../../images/wesele-768.jpg");}
+  .bgimg-parking {background-image: url("../../images/parking-768.jpg");}
+  .bgimg-fotografie {background-image: url("../../images/fotografie-768.jpg");}
+  .bgimg-kontakt {background-image: url("../../images/kontakt-768.jpg");}
+}
+@media (min-width: 769px) {
+  .bgimg-slub {background-image: url("../../images/tytulowa-1024.jpg");}
+  .bgimg-wesele {background-image: url("../../images/wesele-1024.jpg");}
+  .bgimg-parking {background-image: url("../../images/parking-1024.jpg");}
+  .bgimg-fotografie {background-image: url("../../images/fotografie-1024.jpg");}
+  .bgimg-kontakt {background-image: url("../../images/kontakt-1024.jpg");}
+}
+@media (min-width: 1025px) {
+  .bgimg-slub {background-image: url("../../images/tytulowa-1200.jpg");}
+  .bgimg-wesele {background-image: url("../../images/wesele-1200.jpg");}
+  .bgimg-parking {background-image: url("../../images/parking-1200.jpg");}
+  .bgimg-fotografie {background-image: url("../../images/fotografie-1024.jpg");} // exception
+  .bgimg-kontakt {background-image: url("../../images/kontakt-1200.jpg");}
+}
+@media (min-width: 1201px) {
+  .bgimg-slub {background-image: url("../../images/tytulowa-1568.jpg");}
+  .bgimg-wesele {background-image: url("../../images/wesele-1568.jpg");}
+  .bgimg-parking {background-image: url("../../images/parking-1568.jpg");}
+  .bgimg-fotografie {background-image: url("../../images/fotografie-1024.jpg");} // exception
+  .bgimg-kontakt {background-image: url("../../images/kontakt-1568.jpg");}
 }
 
 .caption {
