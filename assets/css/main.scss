@@ -88,36 +88,36 @@ a {
 
 }
 .bgimg-slub {
-  background-image: url("../../images/tytulowa-480.jpg");
+  background-image: url("../../images/tytulowa-768.jpg");
   min-height: 100%;
 }
 .bgimg-wesele {
-  background-image: url("../../images/wesele-480.jpg");
+  background-image: url("../../images/wesele-768.jpg");
   min-height: 100%;
 }
 
 .bgimg-parking {
-  background-image: url("../../images/parking-480.jpg");
+  background-image: url("../../images/parking-768.jpg");
   min-height: 100%;
 }
 
 .bgimg-fotografie {
-  background-image: url("../../images/fotografie-480.jpg");
+  background-image: url("../../images/fotografie-768.jpg");
   min-height: 100%;
 }
 
 .bgimg-kontakt {
-  background-image: url("../../images/kontakt-480.jpg");
+  background-image: url("../../images/kontakt-768.jpg");
   min-height: 100%;
 }
 // for size in {480,768,1024,1200,1568}; do export size=$size; find . -maxdepth 1 -iname "*.jpg" -exec sh -c 'convert -resize "$size" -quality 80% "$1" "../${1%.*}-${size}.jpg"' sh {} \; ;done
-@media (min-width: 481px) {
-  .bgimg-slub {background-image: url("../../images/tytulowa-768.jpg");}
-  .bgimg-wesele {background-image: url("../../images/wesele-768.jpg");}
-  .bgimg-parking {background-image: url("../../images/parking-768.jpg");}
-  .bgimg-fotografie {background-image: url("../../images/fotografie-768.jpg");}
-  .bgimg-kontakt {background-image: url("../../images/kontakt-768.jpg");}
-}
+// @media (min-width: 481px) {
+//   .bgimg-slub {background-image: url("../../images/tytulowa-768.jpg");}
+//   .bgimg-wesele {background-image: url("../../images/wesele-768.jpg");}
+//   .bgimg-parking {background-image: url("../../images/parking-768.jpg");}
+//   .bgimg-fotografie {background-image: url("../../images/fotografie-768.jpg");}
+//   .bgimg-kontakt {background-image: url("../../images/kontakt-768.jpg");}
+// }
 @media (min-width: 769px) {
   .bgimg-slub {background-image: url("../../images/tytulowa-1024.jpg");}
   .bgimg-wesele {background-image: url("../../images/wesele-1024.jpg");}

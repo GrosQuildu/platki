@@ -74,36 +74,24 @@ a {
   background-size: cover; }
 
 .bgimg-slub {
-  background-image: url("../../images/tytulowa-480.jpg");
+  background-image: url("../../images/tytulowa-768.jpg");
   min-height: 100%; }
 
 .bgimg-wesele {
-  background-image: url("../../images/wesele-480.jpg");
+  background-image: url("../../images/wesele-768.jpg");
   min-height: 100%; }
 
 .bgimg-parking {
-  background-image: url("../../images/parking-480.jpg");
+  background-image: url("../../images/parking-768.jpg");
   min-height: 100%; }
 
 .bgimg-fotografie {
-  background-image: url("../../images/fotografie-480.jpg");
+  background-image: url("../../images/fotografie-768.jpg");
   min-height: 100%; }
 
 .bgimg-kontakt {
-  background-image: url("../../images/kontakt-480.jpg");
+  background-image: url("../../images/kontakt-768.jpg");
   min-height: 100%; }
-
-@media (min-width: 481px) {
-  .bgimg-slub {
-    background-image: url("../../images/tytulowa-768.jpg"); }
-  .bgimg-wesele {
-    background-image: url("../../images/wesele-768.jpg"); }
-  .bgimg-parking {
-    background-image: url("../../images/parking-768.jpg"); }
-  .bgimg-fotografie {
-    background-image: url("../../images/fotografie-768.jpg"); }
-  .bgimg-kontakt {
-    background-image: url("../../images/kontakt-768.jpg"); } }
 
 @media (min-width: 769px) {
   .bgimg-slub {
