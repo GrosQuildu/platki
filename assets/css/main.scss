@@ -80,13 +80,16 @@ a {
 
 .bgimg {
   position: relative;
-  // opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
+
+@supports (-webkit-touch-callout: none) {
+   background-attachment: scroll;
+}
+
 .bgimg-slub {
   background-image: url("../../images/tytulowa-768.jpg");
   min-height: 100%;
