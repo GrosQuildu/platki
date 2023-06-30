@@ -87,7 +87,9 @@ a {
 }
 
 @supports (-webkit-touch-callout: none) {
-   background-attachment: scroll;
+  .bgimg {
+    background-attachment: scroll;
+  }
 }
 
 .bgimg-slub {
